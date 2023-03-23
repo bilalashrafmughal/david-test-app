@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Albert Sans', sans-serif;
+    src: url("/assets/fonts/AlberSans.ttf") format("woff2"),
+      url("/assets/fonts/AlberSans.ttf") format("woff");
+    font-weight: bold;
+    font-display: swap;
+  }
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Albert Sans', sans-serif;
+  }
+
+html {
+    font-size: 62.5%;
+    font-family: 'Albert Sans', sans-serif;
+    background-color: #121212;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+
+/* Small screens */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 50%; /* 8px converted to rem (8/16*100) */
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 56.25%; /* 9px converted to rem (9/16*100) */
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 62.5%; /* 10px converted to rem (10/16*100) */
+    }
+}
+
+/* Extra large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    html {
+        font-size: 68.75%; /* 11px converted to rem (11/16*100) */
+    }
+}
+
+/* 2K screens */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    html {
+        font-size: 75%; /* 12px converted to rem (12/16*100) */
+    }
+}
+
+/* 4K screens */
+@media only screen and (min-width: 1921px) {
+    html {
+        font-size: 87.5%; /* 14px converted to rem (14/16*100) */
+    }
+}
+
+
+/* html, body, #root {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1, .h1 {
+    font-size: 24px;
+}
+
+h2, .h2 {
+    font-size: 20px;
+}
+
+h3, .h3 {
+    font-size: 16px;
+}
+
+h4, .h4 {
+    font-size: 15px;
+}
+
+h5, .h5 {
+    font-size: 13px;
+}
+
+h6, .h6 {
+    font-size: 12px;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
